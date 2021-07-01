@@ -16,7 +16,7 @@ parser.add_argument('--img_size', type=int, default=32, help='size of each image
 parser.add_argument("--n_critic", type=int, default=5, help="number of training steps for discriminator per iter")
 parser.add_argument('--channels', type=int, default=1, help='number of image channels')
 parser.add_argument('--sample_interval', type=int, default=200, help='interval between image sampling')
-parser.add_argument('--nz', type=int, default=64, help="size of the latent z vector used as the generator input.")
+parser.add_argument('--nz', type=int, default=64, help="size of the latent z vector used as the generator input")
 opt = parser.parse_args()
 
 torch.backends.cudnn.deterministic = True
